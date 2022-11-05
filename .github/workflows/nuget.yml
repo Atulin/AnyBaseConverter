@@ -16,9 +16,11 @@ jobs:
         run: dotnet build --configuration Release
       - name: Pack
         run: dotnet pack --configuration Release --no-build --output .
-      - name: Push
-        uses: kzrnm/get-net-sdk-project-versions-action@v1
+      - uses: kzrnm/get-net-sdk-project-versions-action@v1
+        id: get-version
         with:
           proj-path: AnyBaseConverter/AnyBaseConverter.csproj
+      - run: echo "${{steps.get-version.outputs.version}}"
+      - name: Push
         run: dotnet nuget push Atulin.AnyBaseConverter.${{steps.get-version.outputs.version}}.nupkg --source https://api.nuget.org/v3/index.json --api-key ${{ NUGET_KEY }}
         
