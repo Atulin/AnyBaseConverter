@@ -9,6 +9,10 @@
         <Authors>Atulin</Authors>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <Title>AnyBaseConverter</Title>
+        <PackageVersion>1.0.1</PackageVersion>
+        <PackageProjectUrl>https://github.com/Atulin/AnyBaseConverter</PackageProjectUrl>
+        <RepositoryUrl>https://github.com/Atulin/AnyBaseConverter</RepositoryUrl>
+        <RepositoryType>Git</RepositoryType>
     </PropertyGroup>
 
 </Project>
