@@ -7,3 +7,5 @@
 // var back = res.DecimalToAny(b);
 //
 // Console.WriteLine($"Input: {input} with base {b}\nRes2: {res}\nBack: {back}");
+
+Console.WriteLine("Hello World");
